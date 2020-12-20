@@ -1,0 +1,18 @@
+
+ErrorDocument 400 http://wiktorlesiak.online/
+ErrorDocument 401 http://wiktorlesiak.online/
+ErrorDocument 403 http://wiktorlesiak.online/
+ErrorDocument 404 http://wiktorlesiak.online/404
+ErrorDocument 503 http://wiktorlesiak.online/
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php [NC,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html [NC,L]
+
+
+
