@@ -1,5 +1,5 @@
 <?php
-$target_dir = "images/";
+$target_dir = "images/paintings/";
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 $uploadOk = 1;
 $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
@@ -23,7 +23,7 @@ if (file_exists($target_file)) {
 }
 
 // Check file size
-if ($_FILES["fileToUpload"]["size"] > 5000000) {
+if ($_FILES["fileToUpload"]["size"] > 50000000) {
   echo "Sorry, your file is too large.";
   $uploadOk = 0;
 }
@@ -55,7 +55,6 @@ if(count($_POST)>0) {
     $current_id = mysqli_insert_id($con);
     if(!empty($current_id)) {
         $message = "Added new painting successfully";
-        echo '<script>alert("Added new painting successfully")</script>';
 
 
     }
@@ -84,6 +83,7 @@ if(count($_POST)>0) {
                             <a href="index.php" class="icon style2 fa-home"><span class="label"></span></a>
 						</ul>
 					</header>
+                                <h1>Upload Image to row 1</h1>
 
                                 <form name="frmUser" method="post" action="">
                                     <div style="width:500px;">
@@ -98,11 +98,11 @@ if(count($_POST)>0) {
                                             </tr>
                                             <tr>
                                                 <td><label>Image</label></td>
-                                                <td><input type="text" name="image" class="txtField" value="images/<?php print_r($_FILES["fileToUpload"]["name"])?>" readonly></td>
+                                                <td><input type="text" name="image" class="txtField" value="images/paintings/<?php print_r($_FILES["fileToUpload"]["name"])?>" readonly></td>
                                             </tr>
                                             <tr>
                                                 <td><label>Price</label></td>
-                                                <td><input type="text" name="p_price" class="txtField"></td>
+                                                <td><input type="text" name="p_price" class="txtField" value="0"></td>
                                             </tr>
                                             <tr>
                                                 <td><label>Description</label></td>

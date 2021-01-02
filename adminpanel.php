@@ -43,13 +43,29 @@ if(count($_POST)>0) {
 				<p><a  href="logout.php" class="btn btn-primary btn-large">Logout </a>
 
 
-
-
-                <h2>ADD IMAGE</h2>
+                <h2>ADD IMAGE ROW 1 </h2>
                 <form action="uploads.php" method="post" enctype="multipart/form-data">
                 Select image to upload:
                 <input type="file" name="fileToUpload" id="fileToUpload">
-                <input type="submit" value="Upload Image" name="submit">
+                <input type="submit" value="Upload Image" name="submitrow2">
+                </form>
+
+                <hr>
+
+                <h2>ADD IMAGE ROW 2 </h2>
+                <form action="uploadsrow2.php" method="post" enctype="multipart/form-data">
+                Select image to upload:
+                <input type="file" name="fileToUpload" id="fileToUpload">
+                <input type="submit" value="Upload Image" name="submitrow2">
+                </form>
+
+                <hr>
+
+                <h2>ADD IMAGE ROW 3 </h2>
+                <form action="uploadsrow3.php" method="post" enctype="multipart/form-data">
+                Select image to upload:
+                <input type="file" name="fileToUpload" id="fileToUpload">
+                <input type="submit" value="Upload Image" name="submitrow3">
                 </form>
 
 
