@@ -51,16 +51,10 @@ require_once('dbconnection.php');
                                             <h3><?php
                                             if ($row["p_price"] == 0){
                                             //Do Nothing
-                                            }else{
-                                            echo "Price: &euro;" . $row["p_price"];
-                                            }
-                                            ?>
+                                            }else{echo "Price: &euro;" . $row["p_price"];} ?>
                                             </h3>
                                         </a>
-                                        <?php
-                                        }
-                                        }
-                                        ?>
+                                        <?php }} ?>
                                 </div>
 
 
@@ -81,17 +75,10 @@ require_once('dbconnection.php');
                                             <h3><?php
                                             if ($row2["p_price"] == 0){
                                             //Do Nothing
-                                            }else{
-                                            echo "Price: &euro;" . $row2["p_price"];
-                                            }
-                                            ?>
+                                            }else{echo "Price: &euro;" . $row2["p_price"];} ?>
                                             </h3>
                                         </a>
-                                        <?php
-                                        }
-                                        }
-                                        ?>
-
+                                        <?php }} ?>
                                 </div>
 
                                 <div>
@@ -111,17 +98,10 @@ require_once('dbconnection.php');
                                             <h3><?php
                                             if ($row3["p_price"] == 0){
                                             //Do Nothing
-                                            }else{
-                                            echo "Price: &euro;" . $row3["p_price"];
-                                            }
-                                            ?>
+                                            }else{echo "Price: &euro;" . $row["p_price"]; } ?>
                                             </h3>
                                         </a>
-                                        <?php
-                                        }
-                                        }
-                                        ?>
-
+                                        <?php }} ?>
                                 </div>
 
 
