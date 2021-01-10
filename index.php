@@ -48,6 +48,14 @@ require_once('dbconnection.php');
                                         <a href="<?php echo $row["image"]; ?>">
                                             <img src="<?php echo $row["image"]; ?>" alt="" />
                                             <h3><?php echo $row["description"]; ?>cm</h3>
+                                            <h3><?php
+                                            if ($row["p_price"] == 0){
+                                            //Do Nothing
+                                            }else{
+                                            echo "Price: &euro;" . $row["p_price"];
+                                            }
+                                            ?>
+                                            </h3>
                                         </a>
                                         <?php
                                         }
@@ -70,6 +78,14 @@ require_once('dbconnection.php');
                                         <a href="<?php echo $row2["image"]; ?>">
                                             <img src="<?php echo $row2["image"]; ?>" alt="" />
                                             <h3><?php echo $row2["description"]; ?>cm</h3>
+                                            <h3><?php
+                                            if ($row2["p_price"] == 0){
+                                            //Do Nothing
+                                            }else{
+                                            echo "Price: &euro;" . $row2["p_price"];
+                                            }
+                                            ?>
+                                            </h3>
                                         </a>
                                         <?php
                                         }
@@ -92,6 +108,14 @@ require_once('dbconnection.php');
                                         <a href="<?php echo $row3["image"]; ?>">
                                             <img src="<?php echo $row3["image"]; ?>" alt="" />
                                             <h3><?php echo $row3["description"]; ?>cm</h3>
+                                            <h3><?php
+                                            if ($row3["p_price"] == 0){
+                                            //Do Nothing
+                                            }else{
+                                            echo "Price: &euro;" . $row3["p_price"];
+                                            }
+                                            ?>
+                                            </h3>
                                         </a>
                                         <?php
                                         }
