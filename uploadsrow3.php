@@ -50,7 +50,7 @@ if ($uploadOk == 0) {
 
 if(count($_POST)>0) {
     require_once("dbconnection.php");
-    $sql = "INSERT INTO paintingsrow3 (p_name, image, p_price, description) VALUES ('" . $_POST["p_name"] . "','" . $_POST["image"] . "','" . $_POST["p_price"] . "','" . $_POST["description"] . "')";
+    $sql = "INSERT INTO paintingsrow3 (p_name, image, p_price, description, f_image) VALUES ('" . $_POST["p_name"] . "','" . $_POST["image"] . "','" . $_POST["p_price"] . "','" . $_POST["description"] . "','" . $_POST["f_image"] . "')";
     mysqli_query($con,$sql);
     $current_id = mysqli_insert_id($con);
     if(!empty($current_id)) {
@@ -97,6 +97,10 @@ if(count($_POST)>0) {
                                             <tr>
                                                 <td><label>Image</label></td>
                                                 <td><input type="text" name="image" class="txtField" value="images/paintings/<?php print_r($_FILES["fileToUpload"]["name"])?>" readonly></td>
+                                            </tr>
+                                            <tr>
+                                                <td><label>Image</label></td>
+                                                <td><input type="text" name="f_image" class="txtField" value="images/fulls/<?php print_r($_FILES["fileToUpload"]["name"])?>" readonly></td>
                                             </tr>
                                             <tr>
                                                 <td><label>Price</label></td>

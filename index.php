@@ -45,7 +45,7 @@ require_once('dbconnection.php');
                                     {
                                     ?>
                                     <form method="post" action="index.php?action=add&id=<?php echo $row["id"]; ?>">
-                                        <a href="<?php echo $row["image"]; ?>">
+                                        <a href="<?php echo $row["f_image"]; ?>">
                                             <img src="<?php echo $row["image"]; ?>" alt="" />
                                             <h3><?php echo $row["description"]; ?>cm</h3>
                                             <h3><?php
@@ -69,7 +69,7 @@ require_once('dbconnection.php');
                                     {
                                     ?>
                                     <form method="post" action="index.php?action=add&id=<?php echo $row2["id"]; ?>">
-                                        <a href="<?php echo $row2["image"]; ?>">
+                                        <a href="<?php echo $row2["f_image"]; ?>">
                                             <img src="<?php echo $row2["image"]; ?>" alt="" />
                                             <h3><?php echo $row2["description"]; ?>cm</h3>
                                             <h3><?php
@@ -92,7 +92,7 @@ require_once('dbconnection.php');
                                     {
                                     ?>
                                     <form method="post" action="index.php?action=add&id=<?php echo $row3["id"]; ?>">
-                                        <a href="<?php echo $row3["image"]; ?>">
+                                        <a href="<?php echo $row3["f_image"]; ?>">
                                             <img src="<?php echo $row3["image"]; ?>" alt="" />
                                             <h3><?php echo $row3["description"]; ?>cm</h3>
                                             <h3><?php
