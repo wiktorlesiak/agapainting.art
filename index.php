@@ -7,13 +7,12 @@ require_once('dbconnection.php');
 <html>
 <head>
     <title>Agnieszka Lesiak Art</title>
-    <meta charset="utf-8" />
-    <link rel="icon" href="images/icon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="images/icon.png">
     <link rel="stylesheet" href="assets/css/main.css" />
 </head>
 <body>
-
+<div id="fb-root"></div>
 <!-- Wrapper -->
 <div id="wrapper">
 
@@ -55,6 +54,7 @@ require_once('dbconnection.php');
                         </h3>
                     </a>
                     <?php }} ?>
+
             </div>
 
 
